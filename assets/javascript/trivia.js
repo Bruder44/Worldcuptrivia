@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	var timerNumber = 15;
+	var timerNumber = 16;
     
     var numCorrect = 0;
 	var numIncorrect = 0;
@@ -119,7 +119,7 @@ $(document).ready(function () {
 	};
 	var reset = function () {
 		stop();
-		timerNumber = 15;
+		timerNumber = 16;
 		answers = [];
 		currentQuestion = 0;
 		clearScreen();
@@ -150,7 +150,7 @@ $(document).ready(function () {
 		$('#answersDiv').css('display', 'initial');
 		$('#answerMsg').css('display', 'none');
 		clearInterval();
-		timerNumber = 15;
+		timerNumber = 16;
 	}
 
 	$('.answer').click(function () {
