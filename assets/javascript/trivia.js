@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	var timerNumber = 16;
+	var timerNumber = 120;
     
     var numCorrect = 0;
 	var numIncorrect = 0;
@@ -119,12 +119,12 @@ $(document).ready(function () {
 	};
 	var reset = function () {
 		stop();
-		timerNumber = 16;
+		timerNumber = 120;
 		answers = [];
 		currentQuestion = 0;
 		clearScreen();
 		$('#timerDiv').empty();
-		write('#startTitle', 'Press Start Button to Begin!');
+		write('#startTitle', 'Test Your World Cup Knowledge, you get 15 seconds a question, Press Start To Begin!');
 		show('#start');
 		hide('#reset');
 	};
@@ -150,9 +150,10 @@ $(document).ready(function () {
 		$('#answersDiv').css('display', 'initial');
 		$('#answerMsg').css('display', 'none');
 		clearInterval();
-		timerNumber = 16;
+		this.timerNumber = 120;
 	}
 
+	
 	$('.answer').click(function () {
 		var clicked = $(this);
 		var value = clicked.attr('value');
@@ -174,7 +175,6 @@ $(document).ready(function () {
 			numAnswered ++;
 			numIncorrect ++;
 			currentQuestion ++;
-			timerNumber = 15;
 			$('#questionDiv').empty();
 			answerClear();
 			questionWrite();
