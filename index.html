@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>World Cup Trivia Game</title>
+	
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+	
+</head>
+<body>
+<header>
+	<h1>World Cup Trivia Game</h1>
+</header>
+<section class="container">
+	<div class="row">
+		<div class="jumbotron">
+			<h2 id="startTitle">Press Start to Begin!</h2>
+			<div id="questionDiv"></div>
+			<div id="answerMsg"></div>
+
+			
+			<div id="answersDiv">
+				<div class="answer col-lg-12" id="answer0" value="0"></div>
+				<div class="answer col-lg-12" id="answer1" value="1"></div>
+				<div class="answer col-lg-12" id="answer2" value="2"></div>
+				<div class="answer col-lg-12" id="answer3" value="3"></div>
+			</div>
+		
+			
+			<div id="timerDiv"></div>
+
+			
+			<div id="buttonsDiv">
+	
+				<div class="btn btn-success" type="button" text="Start" id="start">Start</div>
+				<div class="btn btn-primary" type="button" text="Reset" id="reset">Start Over</div>
+			</div>
+
+			<div id="scoreDiv"></div>
+		</div>
+		
+
+	</div>
+	
+</section>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>

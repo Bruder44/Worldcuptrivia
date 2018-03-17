@@ -1,0 +1,15 @@
+.jumbotron {
+	text-align: center;
+	height: 100%;
+
+}
+
+.answer {
+	background-color: #ebe835;
+	border: solid #ccccb3 2px;
+	visibility: hidden;
+}
+
+#reset {
+	visibility: hidden;
+}
