@@ -124,7 +124,7 @@ $(document).ready(function () {
 		currentQuestion = 0;
 		clearScreen();
 		$('#timerDiv').empty();
-		write('#startTitle', 'Test Your World Cup Knowledge, you get 15 seconds a question, Press Start To Begin!');
+		write('#startTitle', 'Test Your World Cup Knowledge, Press Start To Begin!');
 		show('#start');
 		hide('#reset');
 	};
