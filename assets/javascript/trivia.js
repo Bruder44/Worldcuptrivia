@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	var timerNumber = 120;
+	var timerNumber = 16;
     
     var numCorrect = 0;
 	var numIncorrect = 0;
@@ -119,7 +119,7 @@ $(document).ready(function () {
 	};
 	var reset = function () {
 		stop();
-		timerNumber = 120;
+		timerNumber = 16;
 		answers = [];
 		currentQuestion = 0;
 		clearScreen();
@@ -127,6 +127,7 @@ $(document).ready(function () {
 		write('#startTitle', 'Test Your World Cup Knowledge, Press Start To Begin!');
 		show('#start');
 		hide('#reset');
+		
 	};
 	
 	var gameOver = function() {
@@ -150,7 +151,7 @@ $(document).ready(function () {
 		$('#answersDiv').css('display', 'initial');
 		$('#answerMsg').css('display', 'none');
 		clearInterval();
-		this.timerNumber = 120;
+	
 	}
 
 	
@@ -170,6 +171,7 @@ $(document).ready(function () {
 			numCorrect ++;
 			currentQuestion ++;
 			questionWrite();
+			timerNumber = 16;
 		}
 		else {
 			numAnswered ++;
